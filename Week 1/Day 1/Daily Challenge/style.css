@@ -1,0 +1,49 @@
+body{
+    background-image: url(img/ironman.jpg);
+    font-family: "Montserrat";
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    width: 100vh;
+}
+h1{
+    color: gold;
+    font-family: "Bebas Neue";
+    padding-left: 110px;
+    letter-spacing: 5px;
+    font-size: 90px;
+}
+a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: transform 1s ease-in-out; 
+}
+a:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    color:rgb(197, 75, 75);
+}
+.link{
+    padding-left: 135px;
+}
+span{
+    color: rgb(197, 75, 75);
+}
+.content{
+    width: 480px;
+    margin-left: 20px;
+    padding-top: 100px;
+    text-align: center;
+    color: rgb(209, 209, 209);
+    overflow-x: hidden;
+}
+p{
+    line-height: 1.9;
+}
+.logo{
+    position: relative;
+    left: 1350px;
+    bottom: 220px;
+}
