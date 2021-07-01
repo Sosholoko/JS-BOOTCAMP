@@ -22,14 +22,11 @@ h1{
 .div_1, .div_2, .div_3{
     height: 200px;
     width: 200px;
-
-    
 }
 
 .div_1, .div_3{
     display: flex;
     flex-direction: column;
-    
 }
 .div_2{
     display: flex;
@@ -48,16 +45,15 @@ h1{
     height: 50px;
     width: 50px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(221, 221, 60);
     margin-left: 10px;
     margin-top: 70px;
-
 }
 .div_3 div{
     height: 50px;
     width: 50px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(231, 231, 63);
     margin-left: 40px;
     margin-top: 10px;
 }
