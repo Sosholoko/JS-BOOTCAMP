@@ -212,3 +212,180 @@
 //     num ++;
 //     console.log(num)
 // };
+
+
+
+
+//Daily Challenge Day 5
+
+// function longestWord(arr){
+//     return arr.slice().sort((a, b) => {
+//     return b.length - a.length;
+//     })
+    
+// }
+
+// function textArr(arr){
+//     let endString = '';
+//     let word = longestWord(arr);
+//     let asterix = '*'.repeat(word.length + 4);
+//     endString += asterix + "\n";
+
+
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i].length < word.length){
+//         let subst = word.length - arr[i].length;
+//         let space = ' '. repeat(subst);
+//           endString += `* ${arr[i]}${space} *\n`;
+
+//     }else {
+//           endString += `* ${arr[i]} *\n`;
+//     }
+    
+// }
+// endString += asterix;
+// console.log(endString);
+
+
+// }
+// let words = prompt("Please input some words separated by a coma");
+// words = words.split(",").map(item=> item.trim());
+// textArr(words);
+
+// // ["Hello", "World", "in", "a", "frame"]
+
+
+
+
+
+// function frame(){
+
+//     // Prompt the user 
+//     let words = prompt("Please input some words separated by a coma");
+
+//     //Split words of the user input
+//     // take out spaces (map(), trim())
+//     //map = loop the array and changes each items based on the function asked
+//     //trim() takes out space
+//     words = words.split(",").map(item=> item.trim());
+
+//     //find the longest word
+//     let longest = '';
+
+//     //loop the array and check which one is the longest word, loop 'of' is specific for array
+//     //loop 'in' is for objects
+//     for (word of words){
+//         //checking
+//         if(word.length > longest.length){
+//             longest = word;
+//         }
+//     }
+//     //print upper horizontal star
+//     console.log('*'.repeat(longest.length + 6));
+
+//     //print the * word *
+
+//     for(w of words){
+        
+//         //create the space for each word that has less letters than the longest
+//         let spaceWord = (" ".repeat(longest.length - w.length));
+        
+//         //print the * with space and between each word
+//         console.log("* " + " " + w + spaceWord + " " + "*");
+//     }
+
+//     console.log('*'.repeat(longest.length +6));
+// }
+
+// frame();
+
+
+// Daily Challenge Day 1 Week 3
+
+// var count = prompt("Choose a starting number");
+// var beer = "bottles";
+// var takeOut = 1;
+// while (count > 0) {
+//     if (count == 1) {
+//         var beer = "bottle"
+//         console.log("Take " + takeOut++ + " down, pass it around,")
+//     }
+//     if (takeOut == 1) {
+//         console.log(count + " " + beer + " of beer on the wall");
+//         console.log("Take " + takeOut++ + " down, pass it around,")
+//     }
+//     // console.log(count + " " + beer + " of beer on the wall");
+//     console.log(count + " " + beer + " of beer,");
+//     console.log("Take " + takeOut++ + " down pass them around,");
+//     count = count - takeOut + 1;
+//     if (count > 0) {
+//         if (count == 1) {
+//             var beer = "bottle"
+//             console.log("Take " + takeOut++ + " down pass it around,")
+//         }
+//         console.log(count + " " + beer + " of beer on the wall.");
+//     } else {
+//         if (count < 1) {
+//             var beer = "bottles"
+//         }
+//         console.log("No more " + beer + " of beer on the wall.");
+//     }
+// }
+
+
+
+
+//Exercise Game
+
+
+
+count = 0
+
+
+function play(){
+    
+    var val = confirm('Do you want to play the game ?')
+    if (val){
+        numb = prompt("Choose a number between 1 and 10")
+        if (isNaN(numb) || numb < 1 || numb > 10){
+            alert("Invalid Number")
+        } 
+        else{
+            alert("Alright let's play, I'll try to guess")
+            function game(){
+                autonum = Math.floor(Math.random() * 10) + 1;
+                guess = prompt("Guess my number")
+                if (guess > autonum){
+                    alert("My number is smaller than that, try again");
+                    game()
+                }
+                else if (guess < autonum){
+                    alert("My number is bigger than that, try again");
+                    game()
+                }
+                else{
+                    alert("Congratulation it's the number")
+                    count ++
+                    if (count > 3){
+                        alert("You're on fire today !")
+                    }
+                    let playAgain = confirm("Do you want to play again ?")
+                    if (playAgain){
+                        play()
+                    }
+                    else{
+                        alert("Come back soon !")
+                    }
+                }
+                
+            }
+            game()
+        }
+
+    }
+    else{
+        alert('Alright good bye')
+    }
+    
+}
+
