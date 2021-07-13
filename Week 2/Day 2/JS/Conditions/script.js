@@ -314,7 +314,6 @@
 //         console.log(count + " " + beer + " of beer on the wall");
 //         console.log("Take " + takeOut++ + " down, pass it around,")
 //     }
-//     // console.log(count + " " + beer + " of beer on the wall");
 //     console.log(count + " " + beer + " of beer,");
 //     console.log("Take " + takeOut++ + " down pass them around,");
 //     count = count - takeOut + 1;
@@ -339,53 +338,52 @@
 
 
 
-count = 0
+// count = 0
 
 
-function play(){
+// function play(){
     
-    var val = confirm('Do you want to play the game ?')
-    if (val){
-        numb = prompt("Choose a number between 1 and 10")
-        if (isNaN(numb) || numb < 1 || numb > 10){
-            alert("Invalid Number")
-        } 
-        else{
-            alert("Alright let's play, I'll try to guess")
-            function game(){
-                autonum = Math.floor(Math.random() * 10) + 1;
-                guess = prompt("Guess my number")
-                if (guess > autonum){
-                    alert("My number is smaller than that, try again");
-                    game()
-                }
-                else if (guess < autonum){
-                    alert("My number is bigger than that, try again");
-                    game()
-                }
-                else{
-                    alert("Congratulation it's the number")
-                    count ++
-                    if (count > 3){
-                        alert("You're on fire today !")
-                    }
-                    let playAgain = confirm("Do you want to play again ?")
-                    if (playAgain){
-                        play()
-                    }
-                    else{
-                        alert("Come back soon !")
-                    }
-                }
-                
-            }
-            game()
-        }
+//     var val = confirm('Do you want to play the game ?')
+//     if (val){
+//         numb = prompt("Choose a number between 1 and 10")
+//         if (isNaN(numb) || numb < 1 || numb > 10){
+//             alert("Invalid Number")
+//         } 
+//         else{
+//             alert("Alright let's play, I'll try to guess")
+//             function game(){
+//                 autonum = Math.floor(Math.random() * 10) + 1;
+//                 guess = prompt("Guess my number")
+//                 if (guess > autonum){
+//                     alert("My number is smaller than that, try again");
+//                     game()
+//                 }
+//                 else if (guess < autonum){
+//                     alert("My number is bigger than that, try again");
+//                     game()
+//                 }
+//                 else{
+//                     alert("Congratulation it's the number")
+//                     count ++
+//                     if (count > 3){
+//                         alert("You're on fire today !")
+//                     }
+//                     let playAgain = confirm("Do you want to play again ?")
+//                     if (playAgain){
+//                         play()
+//                     }
+//                     else{
+//                         alert("Come back soon !")
+//                     }
+//                 }
+//             }
+//             game()
+//         }
 
-    }
-    else{
-        alert('Alright good bye')
-    }
+//     }
+//     else{
+//         alert('Alright good bye')
+//     }
     
-}
+// }
 
