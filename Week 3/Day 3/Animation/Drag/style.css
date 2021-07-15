@@ -1,0 +1,42 @@
+.box{
+    border: 1px solid black;
+    position: absolute;
+    top: 20;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(41, 69, 121);
+}
+body{
+    background-color: teal;
+    color: white;
+}
+
+#area{
+    border: 3px dotted black;
+    height: 100px;
+    width: 200px;
+}
+#area p {
+    text-align: center;
+    color: black;
+    margin-top: auto;
+}
+
+#area.highlight{
+    border-color: blue;
+}
+
+#txt{
+    position: relative;
+    left: 300px;
+}
