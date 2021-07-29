@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,100&display=swap" rel="stylesheet">
+
+    <title>Star Wars Finder</title>
+</head>
+<style>
+    body{
+        opacity: 100%;
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat';
+        z-index: 1;
+    }
+    .bg{
+        background-image: url("4aa99b6ad2d2cbc7cb04a41571885a8f.jpg");
+        opacity:0.9;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-1;
+    }
+    h1{
+        color: gold;
+        font-size: 60px;
+        font-family: 'Monoton', cursive;
+        opacity: 100%;
+    }
+    h2{
+        font-family: 'Monoton', cursive;
+        color: gold;
+    }
+    .content{
+        height: 200px;
+        width: 500px;
+        background-color: rgba(161, 161, 161, 0.637);
+        color: gold;
+        border: 1px solid gold;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid gold;
+        color: gold;
+        background-color: black;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    button:hover{
+        background-color: gold;
+        color: black;
+    }
+    p{
+        font-weight: bold;
+    }
+    span{
+        color: white;
+    }
+</style>
+<body>
+    <div class="bg">
+    </div>
+    <h1>STAR &#8195&#8195 WARS</h1>
+    <h2>Finder</h2><br>
+    <div class="content">
+        <p id="name"></p>
+        <p id="hei"></p>
+        <p id="gender"></p>
+        <p id="by"></p>
+        <p id="home"></p>
+    </div><br><br><br>
+    <button id="btn">Find Someone</button>
+
+</body>
+<script src="script.js"></script>
+</html>

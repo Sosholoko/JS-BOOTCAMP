@@ -125,7 +125,7 @@ const word = (verb)=>{
 }
 
 async function end(){
-    let f1 = await vip("Barack Obama", "Benyamin Netanyaou");
+    let f1 = await vip("Donald Trump", "Benyamin Netanyaou");
     let f2 = await noun("football");
     let f3 = await town("New York");
     let f4 = await word("playing");
