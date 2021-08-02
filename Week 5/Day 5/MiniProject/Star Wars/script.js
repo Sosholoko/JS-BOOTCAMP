@@ -1,5 +1,4 @@
 let btn = document.getElementById('btn');
-
 btn.addEventListener('click', start);
 
 let lname = document.getElementById("name");
