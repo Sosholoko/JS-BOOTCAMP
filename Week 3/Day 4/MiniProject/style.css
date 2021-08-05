@@ -1,35 +1,47 @@
 body{
-    background-color: rgb(128, 36, 36);
+    background : linear-gradient(rgb(79, 79, 185), rgb(130, 53, 133));
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 h1{
-    text-align: center;
+    float: left;
     padding-top: 20px;
 }
 .adding{
-    margin-left: 33%;
+    margin-left: 37%;
+    margin-top: 50px;
     position: absolute;
 }
-.adding #field{
-    font-size: 25px;
-    border-radius: 10px;
+.adding #field, #field2, #field3, #field4{
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
     border: none;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#field3, #field4{
+    margin-left: 65px;
+}
+#field, #field2, #field3, #field4:focus{
+    outline: none;
 }
 .adding #add{
     position: relative;
-    right: 20px;
+    left: 110px;
     bottom: 2.3px;
     background-color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 21.9px;
+    border-radius: 5px;
+    font-size: 11.9px;
+    font-family: 'Raleway', sans-serif;
 }
 .tasks{
-    height: 300px;
-    width: 300px;
-    background-color: rgb(175, 77, 77);
+    height: 350px;
+    width: 700px;
+    margin-top: 90px;
+    background-color: rgba(255, 255, 255, 0.438);
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -40,19 +52,26 @@ h1{
     color: rgb(253, 253, 253);
     background-color: rgb(56, 52, 92);
     opacity: 100%;
-    margin-left: 10px;
+    margin-left: 100px;
     margin-right: 10px;
     margin-top: 10px;
-    padding-left: 5px;
+    padding-left: 8px;
     padding-top: 20px;
-    border: 1px solid rgb(30, 87, 114);
+    border: none;
     border-radius: 10px;
     list-style: none;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;
 }
 #clr{
     margin-left: 46.5%;
-    margin-top: 20px;
+    margin-top: 12px;
     font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(167, 65, 65);
 }    
 
 #del, #check{
@@ -63,18 +82,20 @@ h1{
 }
 #check{
     font-size: 20px;
+    margin-top: 9px;
     margin-right: 10px;
     
 }
 #del{
     background-color: red;
+    margin-top: 8px;
     border-radius: 20px;
     border: none;
     color: white;
     margin-right: 10px;
 }
 
-#field{
+#field, #field2, #field3, #field4{
     animation: transform;
     transition: .5s ease-in-out;
 
@@ -84,9 +105,38 @@ h1{
     outline-width: 0;
     transform: scale(1.1);
 }
+#field2:focus{
+    outline-width: 0;
+    transform: scale(1.1);
+}
 
 li{
     width: 275px;
     vertical-align: middle;
     display: inline-block;
+}
+
+#titl{
+    color: rgb(219, 89, 89);
+    font-size: 10px;
+}
+
+.more{
+    display: none;
+}
+
+.show-more{
+    display: inline;
+}
+
+.rdmore{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+    font-size: 9px;
+}
+.rdmore:hover{
+    cursor: pointer;
 }
