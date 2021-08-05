@@ -14,10 +14,12 @@ h1{
 }
 .adding #field, #field2, #field3, #field4{
     font-size: 20px;
+    background-color: transparent;
+    border: .5px solid rgba(255, 255, 255, 0.294);
     border-radius: 5px;
+    color: white;
     margin-bottom: 10px;
     padding: 5px;
-    border: none;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
@@ -31,26 +33,34 @@ h1{
     position: relative;
     left: 110px;
     bottom: 2.3px;
-    background-color: white;
+    background-color: transparent;
     border: none;
+    color: white;
     border-radius: 5px;
     font-size: 11.9px;
     font-family: 'Raleway', sans-serif;
+}
+
+#add:hover{
+    border: .5px solid white;
 }
 .tasks{
     height: 350px;
     width: 700px;
     margin-top: 90px;
-    background-color: rgba(255, 255, 255, 0.438);
+    background-color: rgba(255, 255, 255, 0.253);
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
     opacity: 100%;
     overflow-y: scroll;
+    -moz-box-shadow: 0 0 3px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 3px rgb(0, 0, 0);
+    box-shadow: 0 0 3px rgb(112, 112, 112);
 }
 .tasks li{
-    color: rgb(253, 253, 253);
-    background-color: rgb(56, 52, 92);
+    color: rgb(0, 0, 0);
+    background-color: rgba(224, 215, 215, 0.774);
     opacity: 100%;
     margin-left: 100px;
     margin-right: 10px;
@@ -62,6 +72,9 @@ h1{
     list-style: none;
     width: 500px;
     font-family: 'Raleway', sans-serif;
+    -moz-box-shadow: 0 0 3px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 3px rgb(0, 0, 0);
+    box-shadow: 0 0 3px rgb(112, 112, 112);
 }
 #clr{
     margin-left: 46.5%;
@@ -86,10 +99,13 @@ h1{
     margin-right: 10px;
     
 }
+.checked{
+    background-color: tomato;
+}
 #del{
-    background-color: red;
+    background-color: rgb(155, 45, 45);
     margin-top: 8px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     color: white;
     margin-right: 10px;
@@ -97,17 +113,20 @@ h1{
 
 #field, #field2, #field3, #field4{
     animation: transform;
-    transition: .5s ease-in-out;
+    transition: .4s ease-out;
 
 }
 
 #field:focus{
     outline-width: 0;
     transform: scale(1.1);
+    border: 1px solid white;
+    
 }
 #field2:focus{
     outline-width: 0;
     transform: scale(1.1);
+    border: 1px solid white;
 }
 
 li{
@@ -132,7 +151,7 @@ li{
 .rdmore{
     border: none;
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
     margin-left: 20px;
     font-size: 9px;

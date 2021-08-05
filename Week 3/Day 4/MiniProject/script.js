@@ -46,26 +46,28 @@ function adding(){
     arr.push(value);
     console.log(arr);
     task.setAttribute("id", arr.indexOf(value));
-    task.innerHTML = `${value}
+    task.innerHTML = `${value.toUpperCase()}
                     <span class="more" ><p id ='titl'>Description</p>${value2}<br>
                     <p id ='titl'>Starting Date</p>${day}-${month}-${year}<br>
                     <p id ='titl'>Ending Date</p>${day2}-${month2}-${year2}<br>
                     <p id ='titl'>Remaining Days</p>${restday}</span>
 
     <button id="del" onclick="deleting(event)">x</button>
-    <input type="checkbox" id="check"></input>
+    <input type="checkbox" id="check" class="check"></input>
     <button class='rdmore'>More...</button>`; 
     
     area.appendChild(task);
     let rdbtn = document.getElementsByClassName('rdmore');
     
     console.log(rdbtn);
-
+    
     rdbtn[arr.indexOf(value)].addEventListener('click', add);
 
     function add(e){
         e.target.parentNode.children[0].classList.toggle('more');
     };
+
+
 
     const taskdet = {
         [field.value] : field2.value
