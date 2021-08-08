@@ -7,11 +7,6 @@ let area = document.getElementById("tasks");
 let del = document.getElementById("del");
 let arr = [];
 let task;
-//function for the add button to take the info from the field
-
-
-
-
 
 
 field.addEventListener('keypress', activate);
@@ -58,17 +53,12 @@ function adding(){
     
     area.appendChild(task);
     let rdbtn = document.getElementsByClassName('rdmore');
-    
     console.log(rdbtn);
-    
     rdbtn[arr.indexOf(value)].addEventListener('click', add);
 
     function add(e){
         e.target.parentNode.children[0].classList.toggle('more');
     };
-
-
-
     const taskdet = {
         [field.value] : field2.value
     };
@@ -78,11 +68,9 @@ function adding(){
     field3.value = '';
     field4.value = '';
     };
-    
 };
 
 function deleting(e){
-    
     var checkin = confirm('Do you want to delete the selected task ?')
     if( checkin == true){
         e.target.parentNode.remove();
