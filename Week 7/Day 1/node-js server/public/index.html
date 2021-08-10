@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Hello From Static page</h1>
+
+    <h1>Send a Message</h1>
+    <form action="http://localhost:3000/form">
+    <button type="submit">Send</button>
+    </form>
+    
+
+    <h1>Get</h1>
+    <form action="http://localhost:3000/login" method="GET">
+        Username : <input type="text" name="username" value=""><br><br>
+        Password : <input type="text" name="password" value=""><br><br><br>
+        <input type="submit" name="" value="Submit">
+    </form>
+
+    <h1>Post</h1>
+    <form action="http://localhost:3000/login" method="POST">
+        Username : <input type="text" name="username" value=""><br><br>
+        Password : <input type="text" name="password" value=""><br><br><br>
+        <input type="submit" name="" value="Submit">
+    </form>
+
+    <h1>GET Fetch</h1>
+        Username : <input type="text" name="username" id="username" value=""><br><br>
+        Password : <input type="text" name="password" id="password" value=""><br><br><br>
+        <button type="button" name="" value="Send Data" onclick="sendData()">Send Data</button>
+</body>
+<h2>Get Robots</h2>
+<button type="button" onclick="getRobots()">Get Robots</button>
+<div id="robots"></div>
+
+<script src="script.js" charset="utf-8"></script>
+</html>

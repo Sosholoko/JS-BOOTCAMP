@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-filesys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.21.21",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1"
+  }
+}
