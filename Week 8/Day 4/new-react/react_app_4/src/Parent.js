@@ -1,13 +1,15 @@
 import React from 'react';
+import Child from './Child';
+import Counter from './Counter';
 
 class Parent extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
     }
     render(){
         return(
             <div>
-                Parent
+                <Counter />
             </div>
         )
     }

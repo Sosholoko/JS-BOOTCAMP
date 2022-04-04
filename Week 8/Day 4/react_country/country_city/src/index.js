@@ -2,17 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Parent from './Parent'
-import Child from './Child'
-import Counter from './Counter';
-import ErrorBoundary from './ErrorBoundary'
+import App2 from './App copy';
+import {BrowserRouter} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <Counter />
-    </ErrorBoundary>
+    <BrowserRouter>
+      <App2 />
+    </BrowserRouter> 
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,17 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Parent from './Parent'
-import Child from './Child'
-import Counter from './Counter';
-import ErrorBoundary from './ErrorBoundary'
+import {createStore, applyMiddleware} from 'redux';
+import {Provider} from 'react-redux';
+import logger from 'redux-logger';
 import reportWebVitals from './reportWebVitals';
+
+import {reducer} from './redux/reducers'; 
+const store = createStore(reducer, applyMiddleware(logger));
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <Counter />
-    </ErrorBoundary>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
